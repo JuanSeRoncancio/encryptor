@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --first-color: #8190A5;
+    --second-color: #93A2B8;
+    --third-color: #A6B5CB;
+    --fourth-color: #B8C7DD;
+    --fifth-color: #CAD9F0;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    display: none;
+    font-size: 12px;
+}
+
+.tooltip.show {
+    display: block;
+}
+
+body {
+    font-family: Quicksand, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--third-color);
+    color: whitesmoke;
+}
+
+header {
+    background-color: var(--first-color);
+    padding: 10px;
+
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    padding-left: 20%;
+
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--fourth-color);
+    box-shadow: 0 0 10px rgba(3, 3, 3, 0.1);
+    border-radius: 9px;
+}
+
+.mainTittle {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 1100px; 
+    height: 800px; 
+    overflow: hidden; 
+    box-sizing: border-box;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.textToEncript, .encryptedText  {
+    width: 500px;
+    height: 700px;
+    padding: 20px;
+    background-color: var(--first-color);
+    border-radius: 8px;
+}
+
+
+
+.textToEncript h2, .encryptedText h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 400px;
+    height: 400px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid var(--fifth-color);
+    border-radius: 5px;
+    font-family: Quicksand, sans-serif;
+    box-sizing: border-box;
+    background-color: var(--fifth-color);
+}
+
+.alertText{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.exclamation {
+    margin-right: 8px;
+}
+
+button {
+    width: 80px;
+    padding: 10px 10px;
+    background-color: var(--third-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15%;
+}
+
+button:hover {
+    background-color: var(--fourth-color);
+}
+
+.copyButton {
+    margin-top: 20px;
+}
+
+
+
+footer.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--first-color);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Responsive styles for 768px*/
+@media (max-width: 768px) {
+    .container {
+        display: block;
+        width: 90%;
+        height: auto;
+    }
+
+    .textToEncript, .encryptedText {
+        width: 90%;
+        margin-bottom: 20px;
+        margin: 20 auto;
+    }
+
+    textarea {
+        width: 80%;
+        height: 350px;
+    }
+
+    .mainTittle {
+        font-size: 24px;
+    }
+
+    .textToEncript h2, .encryptedText h2 {
+        font-size: 20px;
+    }
+
+    .encryptedText img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+/* Responsive styles for 375px*/
+@media (max-width: 375px) {
+    .container {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .textToEncript, .encryptedText {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 200px;
+    }
+
+    .mainTittle {
+        font-size: 20px;
+    }
+
+    .textToEncript h2, .encryptedText h2 {
+        font-size: 18px;
+    }
+
+    .encryptedText img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+}

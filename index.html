@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./assets/Logo.png">
+    </header>
+
+    <main>
+        <h1 class="mainTittle">Text Encryptor</h1>
+
+        <div class="container">
+
+            <div class="textToEncript">    
+                <h2>Enter the text to encrypt</h2>
+                <textarea id="inputText" placeholder="Enter Text"></textarea>
+                <div class="alertText">
+                    <img class="exclamation" src="./assets/bi_exclamation-circle-fill.png"> Only lowercase letters and no accents.</div>
+                <div class="buttons">    
+                    <button onclick="encrypt(event)" class="encryptButton">Encrypt</button>
+                    <button onclick="decrypt(event)" class="decryptButton">Decrypt</button>
+                </div>
+            </div> 
+
+            <div class="encryptedText">
+                <h2>Encrypted Text:</h2>
+                <p id="encryptedText"></p>
+                <img class="imagePlaceholder" id="imagePlaceholder" src="./assets/Muñeco.png">
+                <h3 id="messageTextIsEmpty">No messages was found</h3>
+                <p id="subMessageTextIsEmpty">Enter the text you want to encrypt or decrypt.</p>
+                <button onclick="copyToClipboard(event)" id="copyButton" class="copyButton" hidden>Copy</button>
+            </div>
+        </div>
+
+
+        <div id="tooltip" class="tooltip"></div>
+    
+    </main>
+
+    <script src="app.js" defer></script>
+
+    <footer class="footer">
+        <p>Developed by Juan Roncancio</p>
+    </footer>
+    
+
+</body>
+</html>
