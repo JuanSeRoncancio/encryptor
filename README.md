@@ -28,4 +28,4 @@ Los usuarios pueden ingresar un texto en un área de texto y luego encriptarlo o
 
 ## Autor
 
-Desarrollado por **Juan Roncancio**. Si tienes alguna pregunta, no dudes en contactarme.
+Desarrollado por **Juan Roncancio**.
